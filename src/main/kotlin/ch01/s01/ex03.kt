@@ -1,3 +1,6 @@
+package ch01.s01
+
+
 fun main(args: Array<String>) {
     val a: Int = args[0].toInt()
     val b: Int = args[1].toInt()
