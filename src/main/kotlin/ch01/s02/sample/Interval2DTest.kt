@@ -18,8 +18,7 @@ fun main(args: Array<String>) {
     val yinterval: Interval1D =
         Interval1D(ylo, yhi)
 
-    val box: Interval2D =
-        Interval2D(xinterval, yinterval)
+    val box: Interval2D = Interval2D(xinterval, yinterval)
     box.draw()
 
     val counter: Counter =
