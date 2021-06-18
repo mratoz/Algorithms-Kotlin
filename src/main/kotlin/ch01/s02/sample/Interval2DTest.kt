@@ -1,10 +1,10 @@
 package ch01.s02.sample
 
-import lib.Counter
-import lib.Interval1D
-import lib.Interval2D
-import lib.StdRandom
-import lib.Point2D
+import edu.princeton.cs.algs4.Counter
+import edu.princeton.cs.algs4.Interval1D
+import edu.princeton.cs.algs4.Interval2D
+import edu.princeton.cs.algs4.StdRandom
+import edu.princeton.cs.algs4.Point2D
 
 fun main(args: Array<String>) {
     val xlo: Double = args[0].toDouble()
@@ -13,13 +13,17 @@ fun main(args: Array<String>) {
     val yhi: Double = args[3].toDouble()
     val t = args[4].toInt()
 
-    val xinterval: Interval1D = Interval1D(xlo, xhi)
-    val yinterval: Interval1D = Interval1D(ylo, yhi)
+    val xinterval: Interval1D =
+        Interval1D(xlo, xhi)
+    val yinterval: Interval1D =
+        Interval1D(ylo, yhi)
 
-    val box: Interval2D = Interval2D(xinterval, yinterval)
+    val box: Interval2D =
+        Interval2D(xinterval, yinterval)
     box.draw()
 
-    val counter: Counter = Counter("hits")
+    val counter: Counter =
+        Counter("hits")
 
     for (i in 0..t-1) {
         val x = StdRandom.random()

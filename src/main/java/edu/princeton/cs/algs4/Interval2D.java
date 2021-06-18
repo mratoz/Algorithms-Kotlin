@@ -7,7 +7,7 @@
  *
  ******************************************************************************/
 
-package lib;
+package edu.princeton.cs.algs4;
 
 /**
  *  The {@code Interval2D} class represents a closed two-dimensional interval,

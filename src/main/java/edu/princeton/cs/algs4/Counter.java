@@ -18,7 +18,7 @@
  *
  ******************************************************************************/
 
-package lib;
+package edu.princeton.cs.algs4;
 
 /**
  *  The {@code Counter} class is a mutable data type to encapsulate a counter.

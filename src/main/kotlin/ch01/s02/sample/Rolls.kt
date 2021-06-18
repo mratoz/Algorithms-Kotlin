@@ -1,12 +1,16 @@
 package ch01.s02.sample
 
-import lib.Counter
-import lib.StdRandom
+import edu.princeton.cs.algs4.Counter
+import edu.princeton.cs.algs4.StdRandom
 
 fun main(args: Array<String>) {
     val t: Int = args[0].toInt()
     val sides = 6
-    val rolls = Array<Counter>(sides + 1){ i -> Counter(i.toString() + "'s") }
+    val rolls = Array<Counter>(sides + 1){ i ->
+        Counter(
+            i.toString() + "'s"
+        )
+    }
 
     for (i in 1..t) {
         val result = StdRandom.uniform(1, sides + 1)

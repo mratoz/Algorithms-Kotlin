@@ -11,7 +11,7 @@
  *
  ******************************************************************************/
 
-package lib;
+package edu.princeton.cs.algs4;
 
 import java.io.BufferedOutputStream;
 import java.io.IOException;
