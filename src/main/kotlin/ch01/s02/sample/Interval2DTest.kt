@@ -1,10 +1,6 @@
 package ch01.s02.sample
 
-import edu.princeton.cs.algs4.Counter
-import edu.princeton.cs.algs4.Interval1D
-import edu.princeton.cs.algs4.Interval2D
-import edu.princeton.cs.algs4.StdRandom
-import edu.princeton.cs.algs4.Point2D
+import edu.princeton.cs.algs4.*
 
 fun main(args: Array<String>) {
     val xlo: Double = args[0].toDouble()
@@ -21,8 +17,11 @@ fun main(args: Array<String>) {
     val box: Interval2D = Interval2D(xinterval, yinterval)
     box.draw()
 
-    val counter: Counter =
-        Counter("hits")
+    // Why not working
+    StdDraw.line(0.0, 0.0, 100.0, 0.0)
+    StdDraw.line(0.0, 0.0, 0.0, 100.0)
+
+    val counter: Counter = Counter("hits")
 
     for (i in 0..t-1) {
         val x = StdRandom.random()
