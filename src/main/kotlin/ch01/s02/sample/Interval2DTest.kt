@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     val box: Interval2D = Interval2D(xinterval, yinterval)
     box.draw()
 
-    // Why not working
+    //TODO: Why not working
     StdDraw.line(0.0, 0.0, 100.0, 0.0)
     StdDraw.line(0.0, 0.0, 0.0, 100.0)
 
