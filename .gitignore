@@ -1,12 +1,15 @@
 # Created by .ignore support plugin (hsz.mobi)
 ### IntelliJ IDEA ###
 .idea
+/.idea/*
+!/.idea/runConfigurations
 *.iws
 *.iml
 *.ipr
 out/
 !**/src/main/**/out/
 !**/src/test/**/out/
+!.run
 
 ### Kotlin template
 # Compiled class file
