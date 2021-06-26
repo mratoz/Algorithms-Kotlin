@@ -3,7 +3,7 @@ package ch01.s03.sample
 import edu.princeton.cs.algs4.StdIn
 import edu.princeton.cs.algs4.StdOut
 
-class Stack<T>{
+public class Stack<T>{
     class Node<T>(val item: T, var next: Node<T>? = null)
 
     var first: Node<T>? = null
