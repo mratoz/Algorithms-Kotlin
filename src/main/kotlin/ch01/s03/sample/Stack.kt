@@ -6,8 +6,8 @@ import edu.princeton.cs.algs4.StdOut
 public class Stack<T>{
     class Node<T>(val item: T, var next: Node<T>? = null)
 
-    var first: Node<T>? = null
-    var n: Int = 0
+    private var first: Node<T>? = null
+    private var n: Int = 0
 
     public fun isEmpty(): Boolean {
         return first == null
