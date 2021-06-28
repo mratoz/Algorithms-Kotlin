@@ -3,7 +3,7 @@ package ch01.s03.sample
 import edu.princeton.cs.algs4.StdIn
 import edu.princeton.cs.algs4.StdOut
 
-public class Stack<T>{
+public class Stack<T>: Iterable<T>{
     class Node<T>(val item: T, var next: Node<T>? = null)
 
     private var first: Node<T>? = null
@@ -31,6 +31,25 @@ public class Stack<T>{
         first = first!!.next
         n--
         return item
+    }
+
+    inner class StackIterator<T>: Iterator<T> {
+        private var current = first
+
+        override fun hasNext(): Boolean {
+            return current != null
+        }
+
+        override fun next(): T {
+            val item = current!!.item as T
+            current = current!!.next
+            return item
+        }
+
+    }
+
+    override fun iterator(): Iterator<T> {
+        return StackIterator<T>()
     }
 }
 
