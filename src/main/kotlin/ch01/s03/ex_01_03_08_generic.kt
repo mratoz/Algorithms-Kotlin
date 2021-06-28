@@ -41,6 +41,7 @@ class DoublingStack<T>(initCap: Int = 1): Iterator<T?> {
         return n >= 1
     }
 
+    // TODO: it's wrong to use pop here as the stack variable may be used multiple times
     override fun next(): T? {
         return pop()
     }
