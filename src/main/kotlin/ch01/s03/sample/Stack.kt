@@ -51,6 +51,14 @@ public class Stack<T>: Iterable<T>{
     override fun iterator(): Iterator<T> {
         return StackIterator<T>()
     }
+
+    override fun toString(): String {
+        var s = super.toString() + ": "
+        for (t in this) {
+            s += "$t "
+        }
+        return s
+    }
 }
 
 fun main(args: Array<String>) {
