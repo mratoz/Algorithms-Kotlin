@@ -3,7 +3,7 @@ package ch01.s03
 import ch01.s03.sample.Queue
 import edu.princeton.cs.algs4.In
 
-private class Date(val s:String) {
+internal class Date(val s:String) {
     private var m: Int = 0
     private var d: Int = 0
     private var y: Int = 1900
