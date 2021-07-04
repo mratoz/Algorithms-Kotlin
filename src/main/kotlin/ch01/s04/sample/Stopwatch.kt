@@ -1,7 +1,7 @@
 package ch01.s04.sample
 
 import edu.princeton.cs.algs4.StdRandom
-import ch01.s04.sample.count
+import ch01.s04.sample.ThreeSum
 
 class Stopwatch {
     var start: Long = 0
@@ -23,7 +23,7 @@ fun main(args: Array<String>) {
         a[i] = StdRandom.uniform(-1000000, 1000000)
     }
     val timer = Stopwatch()
-    val cnt = count(a)
+    val cnt = ThreeSum.count(a)
     val time = timer.elapsedTime()
 
     println("$cnt triples $time seconds")

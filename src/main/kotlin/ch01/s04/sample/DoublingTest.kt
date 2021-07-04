@@ -12,7 +12,7 @@ class DoublingTest {
                 a[i] = StdRandom.uniform(-MAX, MAX)
             }
             val timer = Stopwatch()
-            val cnt = count(a)
+            val cnt = ThreeSum.count(a)
             return timer.elapsedTime()
         }
     }
