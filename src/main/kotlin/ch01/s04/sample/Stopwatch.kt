@@ -18,7 +18,7 @@ class Stopwatch {
 
 fun main(args: Array<String>) {
     val n = args[0].toInt()
-    val a = Array<Int>(n){ 0 }
+    val a = IntArray(n)
     for (i in 0..n-1) {
         a[i] = StdRandom.uniform(-1000000, 1000000)
     }

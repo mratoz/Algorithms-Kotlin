@@ -4,7 +4,7 @@ import edu.princeton.cs.algs4.In
 
 class ThreeSum {
     companion object {
-        fun count(a: Array<Int>): Int {
+        fun count(a: IntArray): Int {
             val n = a.size
             var cnt = 0
 
@@ -26,5 +26,5 @@ class ThreeSum {
 
 fun main(args: Array<String>) {
     val a = In(args[0]).readAllInts()
-    println(ThreeSum.count(a.toTypedArray()))
+    println(ThreeSum.count(a))
 }

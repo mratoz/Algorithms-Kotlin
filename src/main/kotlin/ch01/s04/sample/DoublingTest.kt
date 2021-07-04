@@ -6,7 +6,7 @@ class DoublingTest {
     companion object {
         fun timeTrial(n: Int): Double{
             val MAX = 1000000
-            val a = Array<Int>(n){ 0 }
+            val a = IntArray(n)
 
             for (i in 0..n-1) {
                 a[i] = StdRandom.uniform(-MAX, MAX)
