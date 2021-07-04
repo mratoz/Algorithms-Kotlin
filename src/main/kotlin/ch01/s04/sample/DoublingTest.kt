@@ -18,6 +18,15 @@ class DoublingTest {
     }
 }
 
+
+/*
+250 	 0.016
+500 	 0.022
+1000 	 0.11
+2000 	 1.299
+4000 	 10.219
+8000 	 81.571
+ */
 fun main(args: Array<String>) {
     var n = 250
     while(true) {
