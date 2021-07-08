@@ -28,3 +28,15 @@ class SortCompare {
         }
     }
 }
+
+fun main(args: Array<String>) {
+    val alg1 = args[0]
+    val alg2 = args[1]
+    val N = args[2].toInt()
+    val T = args[3].toInt()
+
+    val t1 = SortCompare.timeRandomInput(alg1, N, T)
+    val t2 = SortCompare.timeRandomInput(alg2, N, T)
+
+    println("For $N random Doubles\n\t$alg1 is ${t2/t1} times faster than $alg2 ")
+}
